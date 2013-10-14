@@ -1,0 +1,38 @@
+[core]
+	editor = vim
+	pager = less -FXRS -x2
+	autocrlf = input
+[merge]
+	tool = vimdiff
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
+[color "branch"]
+	current = green bold
+	local = green
+	remote = red bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red
+[color "sh"]
+	branch = yellow
+[alias]
+	s = status
+	ci = commit
+	l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset' --all
+	ll = log --stat --abbrev-commit
+[user]
+	email = robin@loc-com.de
+	name = Robin Gloster
+
+[push]
+	default = simple
